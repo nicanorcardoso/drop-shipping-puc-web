@@ -1,0 +1,38 @@
+<!--INICIO DO CONTEUDO-->
+<section class="content-header">
+</section>
+
+<section class="content">
+  <section class="invoice">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="page-header">
+          <i class="fa fa-user-circle-o"></i> Clientes Cadastrados </h2>
+      </div>
+    </div>
+    
+    <div class="row invoice-info">
+      <div class="col-xs-12 table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Codigo</th>
+              <th>Nome</th>
+              <th>CNPJ/CPF</th>
+              <th>Ultima Compra</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let customers of customers">
+              <td>{{customers.id}}</td>
+              <td>{{customers.nome}}</td>
+              <td>{{customers.cnpj_cpf}}</td>
+              <td>{{customers.ultima_compra}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</section>
