@@ -15,6 +15,9 @@ import { RadioComponent } from './shared/radio/radio.component';
 import { RatingComponent } from './shared/rating/rating.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { CustomersService } from './customers-list/customers.service';
+import { CatalogoComponent } from './catalogo/catalogo.component';
+import { CatalogoService } from './catalogo/catalogo.service';
+import { ItemCatalogoComponent } from './catalogo/item-catalogo/item-catalogo.component';
 
 
 @NgModule({
@@ -26,7 +29,9 @@ import { CustomersService } from './customers-list/customers.service';
     InputComponent,
     RadioComponent,
     RatingComponent,
-    CustomersListComponent
+    CustomersListComponent,
+    CatalogoComponent,
+    ItemCatalogoComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,7 @@ import { CustomersService } from './customers-list/customers.service';
 
   ],
   providers: [
-    CustomersService,
+    CustomersService, CatalogoService,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
   ],
   bootstrap: [AppComponent]

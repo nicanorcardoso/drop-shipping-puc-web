@@ -1,0 +1,16 @@
+<a [routerLink]="['/catalogo', itemCatalogo.id]">
+  
+  <div class="place-info-box">
+   
+
+    <div class="place-info-box-content">
+
+      <span class="place-info-box-icon"><img [src]="itemCatalogo.imagePath"/></span>
+      <span class="place-info-box-text">{{itemCatalogo.name}}</span>
+      <span class="place-info-box-star"><i class="fa fa-star"></i>{{itemCatalogo.rating}}</span>
+      <span class="place-info-box-detail">{{itemCatalogo.category}}</span>
+      <span class="place-info-box-detail">{{itemCatalogo .deliveryEstimate}}</span>
+    </div>
+    <!-- /.info-box-content -->
+  </div>
+</a>

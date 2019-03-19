@@ -6,6 +6,6 @@ export class MeatPage {
   }
 
   getParagraphText() {
-    return element(by.css('mt-root h1')).getText();
+    return element(by.css('ds-root h1')).getText();
   }
 }
