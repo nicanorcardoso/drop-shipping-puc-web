@@ -3,7 +3,7 @@ import { Customers } from './customers.model';
 import { CustomersService } from './customers.service';
 
 @Component({
-  selector: 'mt-customers-list',
+  selector: 'ds-customers-list',
   templateUrl: './customers-list.component.html',
 })
 export class CustomersListComponent implements OnInit {

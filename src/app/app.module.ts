@@ -18,6 +18,7 @@ import { CustomersService } from './customers-list/customers.service';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { CatalogoService } from './catalogo/catalogo.service';
 import { ItemCatalogoComponent } from './catalogo/item-catalogo/item-catalogo.component';
+import { CarrinhoCompraComponent } from './carrinho-compra/carrinho-compra.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ItemCatalogoComponent } from './catalogo/item-catalogo/item-catalogo.co
     RatingComponent,
     CustomersListComponent,
     CatalogoComponent,
-    ItemCatalogoComponent
+    ItemCatalogoComponent,
+    CarrinhoCompraComponent
   ],
   imports: [
     BrowserModule,

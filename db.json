@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Produto 1",
       "category": "Acessórios",
-      "deliveryEstimate": "25m",
+      "vlrVenda": "10",
       "rating": 4.9,
       "imagePath": "assets/img/catalogo/mesa.png",
       "about": "Informação do produto"
@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Produto 2",
       "category": "Peças",
-      "deliveryEstimate": "100m",
+      "vlrVenda": "20",
       "rating": 3.5,
       "imagePath": "assets/img/catalogo/mesa.png",
       "about": "Informação do produto"
@@ -22,7 +22,7 @@
       "id": "3",
       "name": "Produto 3",
       "category": "Vestuário",
-      "deliveryEstimate": "30-40m",
+      "vlrVenda": "30",
       "rating": 4.8,
       "imagePath": "assets/img/catalogo/mesa.png",
       "about": "Informação do produto"
@@ -31,7 +31,7 @@
       "id": "4",
       "name": "Peças",
       "category": "Saudável",
-      "deliveryEstimate": "75m",
+      "vlrVenda": "40",
       "rating": 4.1,
       "imagePath": "assets/img/catalogo/mesa.png",
       "about": "Informação do produto"
@@ -40,7 +40,7 @@
       "id": "5",
       "name": "Produto 5",
       "category": "MTB",
-      "deliveryEstimate": "40-65m",
+      "vlrVenda": "50",
       "rating": 4.5,
       "imagePath": "assets/img/catalogo/mesa.png",
       "about": "Informação do produto"
@@ -49,7 +49,7 @@
       "id": "6",
       "name": "Produto 6",
       "category": "Road",
-      "deliveryEstimate": "20m",
+      "vlrVenda": "60",
       "rating": 4.4,
       "imagePath": "assets/img/catalogo/mesa.png",
       "about": "Informação do produto"
