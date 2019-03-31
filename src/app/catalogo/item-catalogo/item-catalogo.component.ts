@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { ItemCatalogo } from './item-catalogo.model';
 
 @Component({
@@ -10,10 +10,9 @@ export class ItemCatalogoComponent implements OnInit {
 
   @Input() itemCatalogo: ItemCatalogo
 
-
   constructor() { }
 
   ngOnInit() {
   }
-
+  
 }

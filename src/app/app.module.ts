@@ -19,6 +19,7 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
 import { CatalogoService } from './catalogo/catalogo.service';
 import { ItemCatalogoComponent } from './catalogo/item-catalogo/item-catalogo.component';
 import { CarrinhoCompraComponent } from './carrinho-compra/carrinho-compra.component';
+import { CarrinhoCompraService } from './carrinho-compra/carrinho-compra.service';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { CarrinhoCompraComponent } from './carrinho-compra/carrinho-compra.compo
 
   ],
   providers: [
-    CustomersService, CatalogoService,
+    CustomersService, CatalogoService, CarrinhoCompraService,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
   ],
   bootstrap: [AppComponent]

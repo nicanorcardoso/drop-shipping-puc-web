@@ -1,68 +1,55 @@
-<!--INICIO DO CONTEUDO-->
-<section class="content-header">
-</section>
-
-<section class="content">
-  <section class="invoice">
-
-    {{form.valid}}
-    {{form.value | json}}
-    <!--O atributo name é necessário sempre que se usa ngModel-->
-    <form #form="ngForm" novalidate>
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="page-header">
-            <i class="fa fa-shopping-cart"></i> Finalize o seu pedido
-          </h2>
-        </div>
-      </div>
-
-      <div class="row invoice-info">
-        <div class="col-xs-12">
-          <p class="lead">Endereço de Entrega:</p>
-        </div>
-
-      </div>
-      <!-- /.col -->
-
-      <!-- /.row -->
-
-      <!-- Table row -->
-      <div class="row">
-        <div class="col-xs-12">
-          <p class="lead">Itens do Pedido:</p>
-        </div>
+<!--INICIO DO CARRINHO-->
 
 
-      </div>
-      <div class="row">
-        <!-- accepted payments column -->
-        <div class="col-sm-6 col-xs-12">
-          <p class="lead">Formas de Pagamento:</p>
+<div class="box box-solid">
+    <div class="box-header">
+      <i class="fa fa-shopping-cart"></i>
 
-          <div class="form-group">
-           
-          </div>
-
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-6 col-xs-12">
-          <p class="lead">Frete e Total:</p>
-
-        </div>
-        <!-- /.col -->
-      </div>
-
-    </form>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <button>
-          <i class="fa fa-credit-card"></i> Concluir Pedido
-        </button>
-      </div>
+      <h3 class="box-title">Carrinho</h3>
     </div>
+    <!-- /.box-header -->
+    <div class="box-body">
 
-  </section>
-</section>
-<!-- FIM DO CONTEUDO-->
+      <!--div *ngIf="!items().length">
+        <p class="text-center">
+          Seu carrinho está vazio!
+        </p>
+      </div>
+-->
+      <!--div *ngIf="items().length">
+        <div class="table-responsive">-->
+            <div class="col-xs-12 table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Quantidade</th>
+                      <th>Produto</th>
+                      <th>Valor</th>
+                      <th class="text-right">Subtotal</th>
+                      <th class="text-right"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{itemCatalogo?.quantity}}</td> 
+                      <td>{{itemCatalogo?.name}}</td>                         
+                      <td>{{itemCatalogo?.vlrVenda}}</td>
+                                                                         
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div class="box-footer">
+          <div class="pull-right">
+            <button (click)="clear()" type="button" class="btn btn-danger"></button>
+            <a class="btn btn-success">
+              <i class="fa fa-credit-card"></i> Fechar Pedido</a>
+          </div>
+        </div>
+      </div>
+    <!--/div>
+</div>-->
+
+<!-- FIM DO CARRINHO -->

@@ -11,7 +11,7 @@ export const ROUTES: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'catalogo', component: CatalogoComponent},
     {path: 'item-catalogo', component: ItemCatalogoComponent},
-    {path: 'carrinho-compra', component: CarrinhoCompraComponent},
+    {path: 'catalogo/:id', component: CarrinhoCompraComponent},
     {path: 'customers-list', component: CustomersListComponent}/*
         children:[
             {path: '', redirectTo: 'menu', pathMatch: 'full'}, //quando não for informado nada após /restaurant/id redireciona para o menu
