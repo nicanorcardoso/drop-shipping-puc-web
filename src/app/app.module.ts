@@ -20,6 +20,7 @@ import { CatalogoService } from './catalogo/catalogo.service';
 import { ItemCatalogoComponent } from './catalogo/item-catalogo/item-catalogo.component';
 import { CarrinhoCompraComponent } from './carrinho-compra/carrinho-compra.component';
 import { CarrinhoCompraService } from './carrinho-compra/carrinho-compra.service';
+import { PagamentoComponent } from './carrinho-compra/pagamento/pagamento.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CarrinhoCompraService } from './carrinho-compra/carrinho-compra.service
     CustomersListComponent,
     CatalogoComponent,
     ItemCatalogoComponent,
-    CarrinhoCompraComponent
+    CarrinhoCompraComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,
