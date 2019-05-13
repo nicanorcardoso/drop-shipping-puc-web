@@ -1,5 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
 body {
   color: #555;
 }
@@ -8,10 +6,6 @@ body {
   color: inherit;
 }
 
-/*
- * Component: Place Info Box
- * -------------------
- */
 .place-info-box {
   color: #555;
   display: block;
@@ -22,14 +16,17 @@ body {
   border-radius: 2px;
   margin-bottom: 15px;
 }
+
 .place-info-box small {
   font-size: 14px;
 }
+
 .place-info-box .progress {
   background: rgba(0, 0, 0, 0.2);
   margin: 5px -10px 5px -10px;
   height: 2px;
 }
+
 .place-info-box .progress,
 .place-info-box .progress .progress-bar {
   border-radius: 0;
@@ -37,6 +34,7 @@ body {
 .place-info .progress .progress-bar {
   background: #fff;
 }
+
 .place-info-box-icon {
   border-top-left-radius: 2px;
   border-top-right-radius: 0;
@@ -44,24 +42,39 @@ body {
   border-bottom-left-radius: 2px;
   display: block;
   float: left;
-  /*height: 120px;*/
   width: 120px;
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
 }
+
 .place-info-box-icon > img {
   max-width: 100%;
-  /*border-right: 1px solid rgba(0, 0, 0, 0.1);*/
 }
+
 .place-info-box-content {
   padding: 5px 10px;
   margin-left: 15px;
 }
+
 .place-info-box-detail {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
   width: 100%;
+}
+
+.descricao-produto {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 90%;
+  float: left
 }
 
 .place-info-box-text {
@@ -76,7 +89,13 @@ body {
   width: 80%;
   float: left
 }
-.place-info-box-text {
+
+.valor-item {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  float: right;
 }
 
 .place-info-box-star {
@@ -90,14 +109,14 @@ body {
   width: 20%;
   float: right;
 }
+
 .place-info-box-more {
   display: block;
 }
+
 .progress-description {
   margin: 0;
 }
-
-/* Detail For restaurant */
 
 .box-img-detail {
     width: 180px;
@@ -108,10 +127,6 @@ body {
   font-size: 18px;
 }
 
-/*
- * Component: Menu Item
- * -------------------
- */
 .menu-item-info-box {
   color: #555;
   display: block;
@@ -122,18 +137,22 @@ body {
   border-radius: 2px;
   margin-bottom: 15px;
 }
+
 .menu-item-info-box small {
   font-size: 14px;
 }
+
 .menu-item-info-box .progress {
   background: rgba(0, 0, 0, 0.2);
   margin: 5px -10px 5px -10px;
   height: 2px;
 }
+
 .menu-item-info-box .progress,
 .menu-item-info-box .progress .progress-bar {
   border-radius: 0;
 }
+
 .menu-item-info .progress .progress-bar {
   background: #fff;
 }
@@ -185,8 +204,6 @@ body {
   margin-bottom: 10px;
   text-transform: uppercase;
   width: 80%;
-}
-.menu-item-info-box-text {
 }
 
 .menu-item-info-box-more {

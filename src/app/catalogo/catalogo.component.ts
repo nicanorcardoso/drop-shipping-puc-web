@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CatalogoService } from './catalogo.service';
-import { ItemCatalogo } from './item-catalogo/item-catalogo.model';
+import { ItemCatalogo } from '../model/item-catalogo.model';
+import { AppService } from 'app/app.service';
 
 @Component({
   selector: 'ds-catalogo',
@@ -8,13 +8,12 @@ import { ItemCatalogo } from './item-catalogo/item-catalogo.model';
 })
 export class CatalogoComponent implements OnInit {
 
-  catalogo: ItemCatalogo[]
+  public catalogo: ItemCatalogo[];
 
-  constructor(private catalogoService: CatalogoService) { }
+  constructor(private service: AppService) { }
 
   ngOnInit() {
-    this.catalogoService.catalogo()
-    .subscribe(catalogo => this.catalogo = catalogo)
+    this.service.catalogo().subscribe(catalogo => this.catalogo = catalogo);
   }
 
 }

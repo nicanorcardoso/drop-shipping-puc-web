@@ -1,12 +1,7 @@
- <!-- INíCIO do CONTEÚDO -->
 <section class="content">
-
   <div class="row">
-          <div *ngFor="let itemCatalogo of catalogo" class="col-sm-4 col-xs-12">
-            <ds-item-catalogo [itemCatalogo]="itemCatalogo"></ds-item-catalogo>
-          </div>                                 
-   </div>
-
+    <div *ngFor="let itemCatalogo of catalogo" class="col-sm-4 col-md-4 col-lg-4">
+      <ds-item-catalogo [item]="itemCatalogo"></ds-item-catalogo>
+    </div>
+  </div>
 </section>
-
-<!-- FIM  do CONTEÚDO -->

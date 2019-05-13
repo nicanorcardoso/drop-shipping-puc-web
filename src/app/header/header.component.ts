@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'app/app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ds-header',
@@ -6,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private service: AppService) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  public logout() {
+    this.service.logout();
+    this.router.navigate(['/']);
+  }
+
+  public isUsuarioLogado() {
+    return this.service.isLogged();
   }
 
 }

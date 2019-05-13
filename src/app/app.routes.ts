@@ -1,21 +1,18 @@
 import { Routes } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
-import { CustomersListComponent } from "./customers-list/customers-list.component";
 import { CatalogoComponent } from "./catalogo/catalogo.component";
-import { ItemCatalogoComponent } from "./catalogo/item-catalogo/item-catalogo.component";
 import { CarrinhoCompraComponent } from "./carrinho-compra/carrinho-compra.component";
+import { LoginComponent } from "./login/login.component";
+import { CadastroComponent } from "./cadastro-cliente/cadastro-cliente.component";
+import { AuthGuard } from "./guards/auth.guard";
+import { PedidosComponent } from "./pedidos/pedidos.component";
 
 export const ROUTES: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'catalogo', component: CatalogoComponent},
-    {path: 'item-catalogo', component: ItemCatalogoComponent},
-    {path: 'catalogo/:id', component: CarrinhoCompraComponent},
-    {path: 'customers-list', component: CustomersListComponent}/*
-        children:[
-            {path: '', redirectTo: 'menu', pathMatch: 'full'}, //quando não for informado nada após /restaurant/id redireciona para o menu
-            {path: 'menu', component: MenuComponent},
-            {path: 'reviews', component: ReviewsComponent}
-    ]}*/
-]; 
+    { path: '', redirectTo: 'catalogo', pathMatch: 'full' },
+    { path: 'sobre', component: AboutComponent },
+    { path: 'catalogo', component: CatalogoComponent },
+    { path: 'carrinho', canActivate: [AuthGuard], component: CarrinhoCompraComponent },
+    { path: 'pedidos', canActivate: [AuthGuard], component: PedidosComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'cadastro', component: CadastroComponent },
+];
